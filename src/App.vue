@@ -15,8 +15,10 @@ const getRandomCity = () => {
 getRandomCity()
 </script>
 <template>
-	<div class="select-none flex items-center gap-x-8">
-		<div class="w-58">我想到 {{ targetCity }} {{ targetDist }} 去玩玩</div>
+	<div class="select-none flex items-center gap-x-4 lg:gap-x-8">
+		<div class="w-54 lg:w-58">
+			我想到 {{ targetCity }} {{ targetDist }} 去玩玩
+		</div>
 		<button
 			@click="getRandomCity"
 			class="cursor-pointer px-4 py-1 rounded hover-transition bg-[#24436D] hover:(bg-[#192E4B] text-light-900) active:(bg-[#15263F])"
